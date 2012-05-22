@@ -1,0 +1,6 @@
+C:\Users\Apartment\Documents\Visual Studio 2010\Projects\PrintVendorList\PrintVendorList\bin\Debug\PrintVendorList.exe.config
+C:\Users\Apartment\Documents\Visual Studio 2010\Projects\PrintVendorList\PrintVendorList\bin\Debug\PrintVendorList.exe
+C:\Users\Apartment\Documents\Visual Studio 2010\Projects\PrintVendorList\PrintVendorList\bin\Debug\PrintVendorList.pdb
+C:\Users\Apartment\Documents\Visual Studio 2010\Projects\PrintVendorList\PrintVendorList\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Apartment\Documents\Visual Studio 2010\Projects\PrintVendorList\PrintVendorList\obj\x86\Debug\PrintVendorList.exe
+C:\Users\Apartment\Documents\Visual Studio 2010\Projects\PrintVendorList\PrintVendorList\obj\x86\Debug\PrintVendorList.pdb

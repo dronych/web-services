@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/Mobile_Sales_Management" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/Mobile_Sales_Management" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/Mobile_Sales_Management" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="Capitalize">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="inputstring" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Capitalize_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="Capitalize">
+    <part name="parameters" element="tns:Capitalize" />
+  </message>
+  <message name="Capitalize_Result">
+    <part name="parameters" element="tns:Capitalize_Result" />
+  </message>
+  <portType name="Mobile_Sales_Management_Port">
+    <operation name="Capitalize">
+      <input name="Capitalize" message="tns:Capitalize" />
+      <output name="Capitalize_Result" message="tns:Capitalize_Result" />
+    </operation>
+  </portType>
+  <binding name="Mobile_Sales_Management_Binding" type="tns:Mobile_Sales_Management_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="Capitalize">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mobile_Sales_Management:Capitalize" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Capitalize">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Capitalize_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Mobile_Sales_Management">
+    <port name="Mobile_Sales_Management_Port" binding="tns:Mobile_Sales_Management_Binding">
+      <address location="http://localhost:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Codeunit/Mobile_Sales_Management" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

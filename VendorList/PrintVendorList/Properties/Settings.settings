@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PrintVendorList.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PrintVendorList_NAVService_SystemService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/SystemService</Value>
+    </Setting>
+    <Setting Name="PrintVendorList_NAVService_Mobile_Sales_Management" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Codeunit/Mobile_Sales_Management</Value>
+    </Setting>
+    <Setting Name="PrintVendorList_NAVService_Vendor_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Vendor</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
